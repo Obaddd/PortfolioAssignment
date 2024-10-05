@@ -185,7 +185,7 @@ nav .right a span {
 }
 
 .home-section .headshot img {
-    width: 350px;
+    width: 110%;
     border-radius: 50%;
     zoom: 125%;
     transition: 1s;
