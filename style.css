@@ -1,0 +1,401 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4955F5;
+    --background-color: #BED4F7;
+    --headfoot-color: #98bdf9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background: var(--headfoot-color);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav .left a:hover {
+    color: var(--link-color);
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav .right a:hover {
+    color: var(--background-color);
+    background: var(--text-color);
+    border: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
+
+nav .right a:hover:last-child {
+    color: var(--text-color);
+    background: var(--background-color);
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background: var(--headfoot-color);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.footer .container {
+    max-width: 1170px;
+    padding: 0 100px;
+    height: 60px;
+    background-color: #76abff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: auto;
+    margin-top: 19px;
+}
+
+.footer .container .signature h2 {
+    font-size: 10px;
+    color: rgb(121, 121, 121);
+    margin: 0 10px;
+    padding: 5px 15px;
+}
+
+.footer .container .nav a {
+    font-size: 14px;
+    color: var(--text-color);
+    transition: .4s;
+    background: transparent;
+    margin: 0 10px;
+    padding: 5px 15px;
+}
+
+.footer .container .nav a:hover {
+    opacity: .3;
+}
+
+
+/* SECTION 1: HOMEPAGE */
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.home-section .text {
+    flex: 5;
+}
+
+.home-section .text h2 {
+    font-size: 45px;
+}
+
+.home-section .text h3 {
+    font-size: 25px;
+    color: var(--link-color);
+}
+
+.home-section .text .links {
+    margin-top: 25px;
+}
+
+.home-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: var(--text-color);
+    color: var(--background-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+} 
+
+.home-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    background: var(--background-color)
+}
+
+.home-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.home-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+    zoom: 125%;
+    transition: 1s;
+}
+
+.home-section .headshot img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+/* SECTION 2: ABOUTME */
+
+.about-page {
+    text-align: center;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 18px;
+}
+video {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1080px;
+    align-items: center;
+}
+
+/* SECTION 3: Projects */
+.projects-page {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.projects-page h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.projects-page .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-page .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects-page .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border:  1.5px solid lightslategray;
+    border-radius: 5px;
+}
+
+.projects-page .cells .cell img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.projects-page .cells .cell span {
+    font-size: 18px;
+}
+
+/* SECTION 4: CONTACT */
+
+.contact-page {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-page h2 {
+    font-size: 35px;
+}
+
+.contact-page .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-page .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-page .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page .group form input,
+.contact-page .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #4955F5;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-page .group form button {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 15px;
+    border: 2px solid var(--link-color);
+}
+
+.contact-page .group form button:hover {
+    color: var(--link-color);
+    background-color: #fff;
+}
+
+@media (max-width: 850px) {
+    /* SECTION 1: HOME */
+    .home-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    /* SECTION 1: HOME */
+    .home-section {
+        flex-direction: column-reverse;
+    }
+
+    .home-section .headshot img{
+        width: 300px;
+    }
+
+    /* SECTION 4: CONTACT */
+    .contact-page .group {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+        border: transparent;
+    }
+
+    nav .right a:last-child:hover {
+        color: var(--background-color);
+        background: var(--text-color);
+        border: var(--text-color);
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 0 20px;
+    }
+
+    .footer .container .nav span {
+        font-size: 16px;
+    }
+
+    /* SECTION 1: HOME */
+    .home-section {
+        padding: 0 20px;
+    }
+
+    .home-section .text h2 {
+       font-size: 30px; 
+    }
+
+    /* SECTION 3: Projects */
+    .projects-page {
+        padding: 0 20px;
+    }
+
+    .projects-page .cells .cell span {
+        font-size: 16px;
+    }
+
+    /* SECTION 4: CONTACT */
+    .contact-page {
+        padding: 0 20px;
+    }
+}
