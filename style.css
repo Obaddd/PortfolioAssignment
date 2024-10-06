@@ -92,7 +92,7 @@ nav .right a span {
     align-items: center;
     padding: 0 50px;
     height: 80px;
-    background: var(--headfoot-color);
+    background: linear-gradient(#98bdf9, #76abff, #4955F5);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -101,7 +101,7 @@ nav .right a span {
     max-width: 1170px;
     padding: 0 100px;
     height: 60px;
-    background-color: #76abff;
+    background-color: transparent;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin: auto;
