@@ -34,7 +34,7 @@ nav {
     align-items: center;
     padding: 0 50px;
     height: 80px;
-    background: var(--headfoot-color);
+    background: linear-gradient(#4955F5, #76abff, #98bdf9);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
